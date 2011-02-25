@@ -14,15 +14,14 @@ int main()
         sf::Event Event;
         while (App.GetEvent(Event))
         {
-        // Pencere kapandı
-        if (Event.Type == sf::Event::Closed)
-            App.Close();
+            // Pencere kapandı
+            if (Event.Type == sf::Event::Closed)
+                App.Close();
 
-        // ESC'ye basıldı
-        if ((Event.Type == sf::Event::KeyPressed) && (Event.Key.Code == sf::Key::Escape))
-            App.Close();
+            // ESC'ye basıldı
+            if ((Event.Type == sf::Event::KeyPressed) && (Event.Key.Code == sf::Key::Escape))
+                App.Close();
         }
-
     }
 
     return EXIT_SUCCESS;

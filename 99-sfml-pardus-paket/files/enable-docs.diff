@@ -1,0 +1,21 @@
+--- CMakeLists.txt.orig	2010-11-25 18:45:03.000000000 +0200
++++ CMakeLists.txt	2011-02-12 23:55:53.625000008 +0200
+@@ -28,7 +28,7 @@
+ set(BUILD_EXAMPLES FALSE CACHE BOOL "TRUE to build the SFML examples, FALSE to ignore them")
+ 
+ # add an option for building the API documentation
+-set(BUILD_DOC FALSE CACHE BOOL "TRUE to generate the API documentation, FALSE to ignore it")
++set(BUILD_DOC TRUE CACHE BOOL "TRUE to generate the API documentation, FALSE to ignore it")
+ 
+ # define SFML_STATIC if the build type is not set to 'shared'
+ if(NOT BUILD_SHARED_LIBS)
+@@ -61,7 +61,7 @@
+ install(FILES license.txt DESTINATION ${INSTALL_MISC_DIR})
+ if(WINDOWS)
+     install(FILES extlibs/bin/libsndfile-1.dll DESTINATION bin)
+-    install(FILES extlibs/bin/openal32.dll DESTINATION bin)
+-elseif(MACOSX)
++    install(FILES extlibs/bin/openal32.dll DESTINATION bin)
++elseif(MACOSX)
+     install(DIRECTORY extlibs/libs-osx/Frameworks/sndfile.framework DESTINATION /Library/Frameworks PATTERN ".svn" EXCLUDE)
+ endif()

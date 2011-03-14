@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>sfPhysics</Name>
+        <Homepage>https://github.com/boomshanka/sfPhysics</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>ZLIB</License>
+        <IsA>library</IsA>
+        <Summary>Simple and fast physics</Summary>
+        <Description>sfPhysics is a 2D physics engine for SFML.</Description>
+        <Archive sha1sum="c18596416730731c6d1842c030152b91c09896ce" type="targz">http://dl.dropbox.com/u/1836567/Paketler/boomshanka-sfPhysics-d305f9e.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>sfml-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>sfPhysics</Name>
+        <RuntimeDependencies>
+            <Dependency>sfml</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-03-14</Date>
+            <Version>1.0</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

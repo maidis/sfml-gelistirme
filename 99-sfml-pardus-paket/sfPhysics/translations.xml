@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>sfPhysics</Name>
+        <Summary xml:lang="tr">Basit ve hızlı fizik</Summary>
+        <Description xml:lang="tr">sfPhysics, SFML için bir 2B fizik motorudur.</Description>
+    </Source>
+</PISI>

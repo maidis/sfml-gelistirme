@@ -19,8 +19,8 @@ int main()
     // Defines PI
     const float PI = 3.14159f;
 
-    int xxx = 0;
-    int yyy = 0;
+    int xxx = 200;
+    int yyy = 100;
 
     // Create the window of the application
     sf::RenderWindow window(sf::VideoMode(800, 600, 32), "Move SFML Pong");
@@ -102,6 +102,7 @@ int main()
         {
              int random = sf::Randomizer::Random(10, 40);
              float random2 = sf::Randomizer::Random(0, 1);
+             float random3 = sf::Randomizer::Random(0.1, 3);
 
             // Move the player's paddle
             if (window.GetInput().IsKeyDown(sf::Key::Up) && (leftPaddle.GetPosition().y > 5.f))
@@ -127,7 +128,7 @@ int main()
             }
 
             // Move the ball
-            float factor = ballSpeed * window.GetFrameTime();
+            float factor = ballSpeed * random3 * window.GetFrameTime();
                 ball.Move(std::cos(ballAngle) * factor, std::sin(ballAngle) * factor);
 
             // Check collisions between the ball and the screen

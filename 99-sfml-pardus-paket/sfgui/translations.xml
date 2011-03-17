@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>sfgui</Name>
+        <Summary xml:lang="tr">SFML için grafik kullanıcı arayüzü kütüphanesi</Summary>
+        <Description xml:lang="tr">SFGUI, SFML için bir grafik kullanıcı arayüzü kütüphanesidir.</Description>
+    </Source>
+</PISI>

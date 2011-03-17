@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>sfgui</Name>
+        <Homepage>https://github.com/TankOs/SFGUI</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <IsA>library</IsA>
+        <Summary>GUI library for SFML</Summary>
+        <Description>SFGUI is a GUI library for SFML.</Description>
+        <Archive sha1sum="e328412e87d47fcd9d03f706d7ff30da15701424" type="targz">http://dl.dropbox.com/u/1836567/Paketler/TankOs-SFGUI-4946bdf.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>boost-devel</Dependency>
+            <Dependency>sfml-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>sfgui</Name>
+        <RuntimeDependencies>
+            <Dependency>boost</Dependency>
+            <Dependency>sfml</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-03-17</Date>
+            <Version>0.0</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

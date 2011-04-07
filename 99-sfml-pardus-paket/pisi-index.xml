@@ -1,0 +1,179 @@
+<PISI>
+    <SpecFile>
+        <Source>
+            <Name>sfphysics</Name>
+            <Homepage>https://github.com/boomshanka/sfPhysics</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>ZLIB</License>
+            <IsA>library</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">Simple and fast physics</Summary>
+            <Summary xml:lang="tr">Basit ve hızlı fizik</Summary>
+            <Description xml:lang="en">sfPhysics is a 2D physics engine for SFML.</Description>
+            <Description xml:lang="tr">sfPhysics, SFML için bir 2B fizik motorudur.</Description>
+            <Archive type="targz" sha1sum="c18596416730731c6d1842c030152b91c09896ce">http://dl.dropbox.com/u/1836567/Paketler/boomshanka-sfPhysics-d305f9e.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>sfml-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>sfphysics/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>sfphysics</Name>
+            <RuntimeDependencies>
+                <Dependency>sfml</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-03-14</Date>
+                <Version>1.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>sfgui</Name>
+            <Homepage>https://github.com/TankOs/SFGUI</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>library</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">GUI library for SFML</Summary>
+            <Summary xml:lang="tr">SFML için grafik kullanıcı arayüzü kütüphanesi</Summary>
+            <Description xml:lang="en">SFGUI is a GUI library for SFML.</Description>
+            <Description xml:lang="tr">SFGUI, SFML için bir grafik kullanıcı arayüzü kütüphanesidir.</Description>
+            <Archive type="targz" sha1sum="e328412e87d47fcd9d03f706d7ff30da15701424">http://dl.dropbox.com/u/1836567/Paketler/TankOs-SFGUI-4946bdf.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>boost-devel</Dependency>
+                <Dependency>sfml-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>sfgui/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>sfgui</Name>
+            <RuntimeDependencies>
+                <Dependency>boost</Dependency>
+                <Dependency>sfml</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-03-17</Date>
+                <Version>0.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>sfml</Name>
+            <Homepage>http://sfml-dev.org</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>ZLIB</License>
+            <IsA>library</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">Simple and Fast Multimedia Library</Summary>
+            <Summary xml:lang="tr">Simple and Fast Multimedia Library (Basit ve Hızlı Çokluortam Kütüphanesi)</Summary>
+            <Description xml:lang="en">SFML is a simple, fast, cross-platform, and object-oriented multimedia API.</Description>
+            <Description xml:lang="tr">SFML; basit, hızlı, çok platformlu ve nesne yönelimli bir çokluortam uygulama programlama arayüzüdür.</Description>
+            <Icon>sfml</Icon>
+            <Archive type="targz" sha1sum="87044d4d3e0096d224957cafe52b1ca5097b776e">http://dl.dropbox.com/u/1836567/Paketler/LaurentGomila-SFML-cb1f938.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>freetype-devel</Dependency>
+                <Dependency>glew-devel</Dependency>
+                <Dependency>jpeg-devel</Dependency>
+                <Dependency>libXrandr-devel</Dependency>
+                <Dependency>libXrender-devel</Dependency>
+                <Dependency>libpng-devel</Dependency>
+                <Dependency>libsndfile-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+                <Dependency>openal-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>sfml/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>sfml</Name>
+            <RuntimeDependencies>
+                <Dependency>freetype</Dependency>
+                <Dependency>glew</Dependency>
+                <Dependency>jpeg</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>libXrender</Dependency>
+                <Dependency>libsndfile</Dependency>
+                <Dependency>openal</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/pixmaps/sfml.png" permission="0644" owner="root">sfml.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <Package>
+            <Name>sfml-devel</Name>
+            <Summary xml:lang="en">Development files for SFML</Summary>
+            <Summary xml:lang="tr">SFML için kütüphaneler</Summary>
+            <Description xml:lang="en">SFML devel package provides development files for SFML.</Description>
+            <Description xml:lang="tr">SFML geliştirme paketi, SFML için geliştirme dosyaları sunar.</Description>
+            <IsA>data</IsA>
+            <RuntimeDependencies>
+                <Dependency release="1">sfml</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/share/cmake/Modules</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>sfml-docs</Name>
+            <Summary xml:lang="en">Documentation files for SFML</Summary>
+            <Summary xml:lang="tr">SFML için geliştirme belgeleri</Summary>
+            <Description xml:lang="en">SFML docs package provides documentation files for SFML.</Description>
+            <Description xml:lang="tr">SFML belge paketi, SFML için geliştirme belgeleri sunar.</Description>
+            <IsA>data</IsA>
+            <RuntimeDependencies>
+                <Dependency release="1">sfml</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/usr/share/SFML</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-04-07</Date>
+                <Version>2.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+</PISI>

@@ -103,7 +103,7 @@
             <Description xml:lang="en">SFML is a simple, fast, cross-platform, and object-oriented multimedia API.</Description>
             <Description xml:lang="tr">SFML; basit, hızlı, çok platformlu ve nesne yönelimli bir çokluortam uygulama programlama arayüzüdür.</Description>
             <Icon>sfml</Icon>
-            <Archive type="targz" sha1sum="87044d4d3e0096d224957cafe52b1ca5097b776e">http://dl.dropbox.com/u/1836567/Paketler/LaurentGomila-SFML-cb1f938.tar.gz</Archive>
+            <Archive type="targz" sha1sum="d228d19c72d891485479db8b70c783ae20c6350f">http://dl.dropbox.com/u/1836567/Paketler/LaurentGomila-SFML-17971ca.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>freetype-devel</Dependency>
                 <Dependency>glew-devel</Dependency>
@@ -168,7 +168,7 @@
         </Package>
         <History>
             <Update release="1">
-                <Date>2011-04-07</Date>
+                <Date>2011-04-21</Date>
                 <Version>2.0</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>

@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Simple and Fast Multimedia Library</Summary>
         <Description>SFML is a simple, fast, cross-platform, and object-oriented multimedia API.</Description>
-        <Archive sha1sum="87044d4d3e0096d224957cafe52b1ca5097b776e" type="targz">http://dl.dropbox.com/u/1836567/Paketler/LaurentGomila-SFML-cb1f938.tar.gz</Archive>
+        <Archive sha1sum="d228d19c72d891485479db8b70c783ae20c6350f" type="targz">http://dl.dropbox.com/u/1836567/Paketler/LaurentGomila-SFML-17971ca.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>freetype-devel</Dependency>
             <Dependency>glew-devel</Dependency>
@@ -80,7 +80,7 @@
 
     <History>
         <Update release="1">
-            <Date>2011-04-07</Date>
+            <Date>2011-04-21</Date>
             <Version>2.0</Version>
             <Comment>First release</Comment>
             <Name>Anıl Özbek</Name>

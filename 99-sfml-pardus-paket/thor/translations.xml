@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>thor</Name>
+        <Summary xml:lang="tr">SFML için bir genişleme</Summary>
+        <Description xml:lang="tr">Thor, C++ programlama dilinde yazılmış özgür ve çok platformlu bir kütüphanedir. SFML için genişlemeler sunar. SFML uygulamalar için temel özellikler sunarken Thor, oyun ve grafik uygulamaları geliştirirken gerekebilecek pek çok yüksek seviyeli özellik sunar.</Description>
+    </Source>
+</PISI>

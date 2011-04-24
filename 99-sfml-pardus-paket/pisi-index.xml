@@ -176,4 +176,46 @@
             </Update>
         </History>
     </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>thor</Name>
+            <Homepage>http://www.bromeon.ch/thor</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>ZLIB</License>
+            <IsA>library</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">An extension to SFML</Summary>
+            <Summary xml:lang="tr">SFML için bir genişleme</Summary>
+            <Description xml:lang="en">Thor is an open-source and cross-platform library written in the programming language C++. It is an extension to SFML. While SFML provides rather basic, generic features to allow a wide range of applications, the Thor library comes with high-level features that base on this framework and that are supposed to help in daily C++ routine, especially with respect to graphics and game programming.</Description>
+            <Description xml:lang="tr">Thor, C++ programlama dilinde yazılmış özgür ve çok platformlu bir kütüphanedir. SFML için genişlemeler sunar. SFML uygulamalar için temel özellikler sunarken Thor, oyun ve grafik uygulamaları geliştirirken gerekebilecek pek çok yüksek seviyeli özellik sunar.</Description>
+            <Archive type="tarbz2" sha1sum="f85dc4d22e3193f7187e2fe642694f79f64466c0">http://dl.dropbox.com/u/1836567/Paketler/thor-1.0.1.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>sfml-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>thor/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>thor</Name>
+            <RuntimeDependencies>
+                <Dependency>sfml</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-04-24</Date>
+                <Version>1.0.1</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
 </PISI>

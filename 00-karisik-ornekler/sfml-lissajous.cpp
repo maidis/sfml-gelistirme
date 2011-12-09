@@ -29,16 +29,15 @@ int main()
     {
         // Process events
         sf::Event Event;
-        while (App.GetEvent(Event))
+        while (App.PollEvent(Event))
         {
-            // Close window : exit
-            if (Event.Type == sf::Event::Closed)
+            // Pencere kapandığında veya Escape tuşuna basıldığında : çıkış
+            if ((Event.Type == sf::Event::Closed) ||
+               ((Event.Type == sf::Event::KeyPressed) && (Event.Key.Code == sf::Keyboard::Escape)))
+            {
                 App.Close();
-
-            // Escape key : exit
-            if ((Event.Type == sf::Event::KeyPressed) && (Event.Key.Code == sf::Key::Escape))
-                App.Close();
-
+                break;
+            }
             // MouseMove event : adjust spinPct
             if (Event.Type == sf::Event::MouseMoved)
             {
@@ -71,8 +70,8 @@ int main()
         {
             // Lets use the mouse x and y position to affect the x and y paramters of the curve.
             // These values are quite large, so we scale them down by 0.0001
-            float xPct = (float)(i * App.GetInput().GetMouseX()) * 0.0001;
-            float yPct = (float)(i * App.GetInput().GetMouseY()) * 0.0001;
+            float xPct = (float)(i * sf::Mouse::GetPosition().x) * 0.0001;
+            float yPct = (float)(i * sf::Mouse::GetPosition().y) * 0.0001;
 
             // Lets also use the spin to transform the curve over time
             xPct += spin * 0.002;

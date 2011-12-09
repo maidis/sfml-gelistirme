@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>An extension to SFML</Summary>
         <Description>Thor is an open-source and cross-platform library written in the programming language C++. It is an extension to SFML. While SFML provides rather basic, generic features to allow a wide range of applications, the Thor library comes with high-level features that base on this framework and that are supposed to help in daily C++ routine, especially with respect to graphics and game programming.</Description>
-        <Archive sha1sum="f923892c659b9f1fec09f99bc8cf619f09d4b477" type="tarbz2">http://dl.dropbox.com/u/1836567/Paketler/thor-1.0.2.tar.bz2</Archive>
+        <Archive sha1sum="ef6ee1bb8e33b7811f38f9296424ba74a86856aa" type="targz">http://dl.dropbox.com/u/1836567/Paketler/thor-1.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>sfml-devel</Dependency>
         </BuildDependencies>
@@ -32,8 +32,8 @@
 
     <History>
         <Update release="1">
-            <Date>2011-04-24</Date>
-            <Version>1.0.2</Version>
+            <Date>2011-12-09</Date>
+            <Version>1.1</Version>
             <Comment>First release</Comment>
             <Name>Anıl Özbek</Name>
             <Email>ozbekanil@gmail.com</Email>

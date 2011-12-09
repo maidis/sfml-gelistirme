@@ -4,15 +4,16 @@
 # Licensed under the GNU General Public License, version 3.
 # See the file http://www.gnu.org/copyleft/gpl.txt
 
-from pisi.actionsapi import autotools
+from pisi.actionsapi import cmaketools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
+def setup():
+    pisitools.dosed("src/sfPhysics/CMakeLists.txt", "add_subdirectory\(Electronic\)", "")
+    cmaketools.configure()
+
 def build():
-    pisitools.dosed("build/Makefile", "colorgcc", "g++")
-    pisitools.dosed("build/Makefile", "/local", "")
-    autotools.make()
+    cmaketools.make()
 
 def install():
-    autotools.rawInstall("DESTDIR=%s/usr" % get.installDIR())
-    pisitools.removeDir("/usr/lib/debug")
+    cmaketools.rawInstall("DESTDIR=%s" % get.installDIR())

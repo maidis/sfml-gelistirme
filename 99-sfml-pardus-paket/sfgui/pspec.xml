@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>GUI library for SFML</Summary>
         <Description>SFGUI is a GUI library for SFML.</Description>
-        <Archive sha1sum="e328412e87d47fcd9d03f706d7ff30da15701424" type="targz">http://dl.dropbox.com/u/1836567/Paketler/TankOs-SFGUI-4946bdf.tar.gz</Archive>
+        <Archive sha1sum="915c1dfd70fb0e6608fe6504bd1fc728a48f292a" type="targz">http://dl.dropbox.com/u/1836567/Paketler/TankOs-SFGUI-319dadb.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>boost-devel</Dependency>
             <Dependency>sfml-devel</Dependency>
@@ -35,7 +35,7 @@
 
     <History>
         <Update release="1">
-            <Date>2011-03-17</Date>
+            <Date>2011-12-09</Date>
             <Version>0.0</Version>
             <Comment>First release</Comment>
             <Name>Anıl Özbek</Name>

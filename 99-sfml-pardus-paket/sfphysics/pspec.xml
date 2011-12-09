@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Simple and fast physics</Summary>
         <Description>sfPhysics is a 2D physics engine for SFML.</Description>
-        <Archive sha1sum="c18596416730731c6d1842c030152b91c09896ce" type="targz">http://dl.dropbox.com/u/1836567/Paketler/boomshanka-sfPhysics-d305f9e.tar.gz</Archive>
+        <Archive sha1sum="0b88edf1448b5795c7dd92039f2ffbf3fcfb1829" type="targz">http://dl.dropbox.com/u/1836567/Paketler/boomshanka-sfPhysics-595b43c.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>sfml-devel</Dependency>
         </BuildDependencies>
@@ -33,7 +33,7 @@
 
     <History>
         <Update release="1">
-            <Date>2011-03-14</Date>
+            <Date>2011-12-09</Date>
             <Version>1.0</Version>
             <Comment>First release</Comment>
             <Name>Anıl Özbek</Name>
